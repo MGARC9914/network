@@ -36,7 +36,7 @@ In this tutorial, we observe various network traffic to and from Azure Virtual M
 <br />
 
 <p>
-<li>Next go to the Windows vm and click on a browser to install wireshark.</li>
+<li>Next go to the Windows vm and click on a browser to install Wireshark.</li>
 </p>
 <p>
 <img src="https://i.imgur.com/06oLb8y.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
@@ -52,4 +52,22 @@ In this tutorial, we observe various network traffic to and from Azure Virtual M
 <img src="https://i.imgur.com/iUi2nxc.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 </p>
 <br />
+
+<p>
+<li>Now we're going to observe the different protocols.</li>
+<li>The first one we're looking at is ICMP. Type in ICMP on the search bar. You will see that it's completely empty because we haven't sent any traffic regarding ICMP.</li>
+</p>
+<p>
+<img src="https://i.imgur.com/TByVpx2.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+</p>
+<p>
+<li>Next we're going to ping the Linux vm private ip address.</li>
+<li>You can get the ip address by going to azure and clicking on the Linux virtual machine.</li>
+  <img src="https://i.imgur.com/h8WYmDA.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+  <img src="https://i.imgur.com/9GxMgCS.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+  <img src="https://i.imgur.com/wL2ol3j.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+</p>
+<br />
+
+
 
