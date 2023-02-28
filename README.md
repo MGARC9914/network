@@ -72,6 +72,39 @@ In this tutorial, we observe various network traffic to and from Azure Virtual M
 </p>
 <br />
 
+<p>
+<li>Next we're going to ping again but this time with a -t to keep pinging nonstop.</li>
+</p>
+<p>
+<img src="https://i.imgur.com/zJFsn15.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+</p>
+<br />
+
+<p>
+<li>Now we're going to use Network security groups on Azure to make a rule that prevents ICMP traffic.</li>
+</p>
+<p>
+<img src="https://i.imgur.com/BqbRmiC.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<img src="https://i.imgur.com/0zTDorl.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+</p>
+<p>
+<li>After click on Add and create the rule that will deny ICMP traffic.</li>
+</p>
+<p>
+<img src="https://i.imgur.com/q2HSshi.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+</p>
+<p>
+<li>After the rule was created you will see that the ICMP traffic was timed out.</li>
+</p>
+<p>
+<img src="https://i.imgur.com/Ke8ggGu.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<img src="https://i.imgur.com/cKJ5H1A.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+</p>
+
+<br />
+
+
+
 
 
 
