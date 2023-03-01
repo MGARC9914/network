@@ -28,7 +28,7 @@ In this tutorial, we observe various network traffic to and from Azure Virtual M
 <h2>Actions and Observations</h2>
 
 <p>
-<li>The first thing we do is install both Windows and Linux virtual machines from azure.</li>
+<li>First, we will create two virtual machines one is going to Windows the other is Linux.</li>
 </p>
 <p>
 <img src="https://i.imgur.com/0dIfWds.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
@@ -36,7 +36,7 @@ In this tutorial, we observe various network traffic to and from Azure Virtual M
 <br />
 
 <p>
-<li>Next go to the Windows vm and click on a browser to install Wireshark.</li>
+<li>Next, go to the Windows VM and click on a browser to install Wireshark.</li>
 </p>
 <p>
 <img src="https://i.imgur.com/06oLb8y.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
@@ -45,7 +45,7 @@ In this tutorial, we observe various network traffic to and from Azure Virtual M
 <br />
 
 <p>
-<li>Once Wireshark is installed, double click on "Ethernet" to observe what is happening in the virtual network.</li>
+<li>Once Wireshark is installed, double-click on "Ethernet" to observe what is happening in the virtual network.</li>
 </p>
 <p>
 <img src="https://i.imgur.com/mP5APqx.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
@@ -55,14 +55,14 @@ In this tutorial, we observe various network traffic to and from Azure Virtual M
 
 <p>
 <li>Now we're going to observe the different protocols.</li>
-<li>The first one we're looking at is ICMP. Type in ICMP on the search bar. You will see that it's completely empty because we haven't sent any traffic regarding ICMP.</li>
+<li>The first one we're looking at is ICMP, type in ICMP on the search bar. You will see that it's empty because we haven't sent any traffic regarding ICMP.</li>
 </p>
 <p>
 <img src="https://i.imgur.com/TByVpx2.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 </p>
 <p>
-<li>Next we're going to ping the Linux vm private ip address.</li>
-<li>You can get the ip address by going to azure and clicking on the Linux virtual machine.</li>
+<li>Next, we're going to ping the Linux VM private IP address.</li>
+<li>You can get the IP address by going to azure and clicking on the Linux virtual machine.</li>
   <img src="https://i.imgur.com/h8WYmDA.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
   <img src="https://i.imgur.com/9GxMgCS.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
   <img src="https://i.imgur.com/wL2ol3j.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
@@ -73,7 +73,7 @@ In this tutorial, we observe various network traffic to and from Azure Virtual M
 <br />
 
 <p>
-<li>Next we're going to ping again but this time with a -t to keep pinging nonstop.</li>
+<li>Next, we're going to ping again but this time with a -t to keep pinging nonstop.</li>
 </p>
 <p>
 <img src="https://i.imgur.com/zJFsn15.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
@@ -88,7 +88,7 @@ In this tutorial, we observe various network traffic to and from Azure Virtual M
 <img src="https://i.imgur.com/0zTDorl.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 </p>
 <p>
-<li>After click on Add and create the rule that will deny ICMP traffic.</li>
+<li>After clicking on Add and create the rule that will deny ICMP traffic.</li>
 </p>
 <p>
 <img src="https://i.imgur.com/q2HSshi.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
@@ -103,7 +103,35 @@ In this tutorial, we observe various network traffic to and from Azure Virtual M
 
 <br />
 
+<p>
+<li>Now we going to look at ssh protocol.</li>
+<li>We are going to ssh to the Linux VM. We do that by going to cmd or PowerShell and typing in ssh {usernamme}@{private IP address of the Linux VM}.</li>
+</p>
+<p>
+<img src="https://i.imgur.com/6woB2rk.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<img src="https://i.imgur.com/wVwCnwN.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<img src="https://i.imgur.com/6hMUn0T.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+</p>
+<br />
 
+<p>
+<li>With the DHCP protocol, we're just going to renew the IP address. </li>
+</p>
+<p>
+<img src="https://i.imgur.com/ojAr6yN.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<img src="https://i.imgur.com/1KxLKox.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<img src="https://i.imgur.com/G0IdRVW.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+</p>
+<br />
+
+<p>
+<li>Lastly, with DNS, we can use the nslookup command to have data flow in Wireshark. </li>
+</p>
+<p>
+<img src="https://i.imgur.com/zMtA41v.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<img src="https://i.imgur.com/TeTUkVr.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+</p>
+<br />
 
 
 
